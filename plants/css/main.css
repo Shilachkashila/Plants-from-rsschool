@@ -86,6 +86,9 @@ nav a {
   line-height: 50px;
   color: #010201;
 }
+nav a:hover {
+  color: #499A18;
+}
 .active-nav {
   font-weight: 700;
   color: #E06733;
@@ -132,6 +135,12 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  background-color: inherit;
+  transition: 0.5s linear;
+}
+.welcome button:hover {
+  background-color: #E06733;
+  color: #ffffff;
 }
 /* ---------------welcome end---------------- */
 
@@ -205,6 +214,11 @@ h1 {
   border: 1px solid #E06733;
   border-radius: 5px;
   background-color: inherit;
+  transition: 0.5s linear;
+}
+.header-menu button:hover {
+  background-color: #E06733;
+  color: #ffffff;
 }
 .service .content {
   display: flex;
@@ -307,9 +321,14 @@ article p {
   border: 1px solid #E06733;
   border-radius: 5px;
   background-color: inherit;
+  transition: 0.5s linear;
+}
+.order-service button:hover {
+  background-color: #E06733;
+  color: #ffffff;
 }
 .prices .wrapper-img {
-  margin-top: 39px;
+  margin: 39px 3px 0 0;
   width: 152px;
 }
 /* ----------------prices---------------- */
@@ -333,39 +352,46 @@ article p {
 .contacts-select-wrapper {
   margin-top: 148px;
 }
-.contacts-select-city { 
-  display: block; 
-  font-size: 20px;  
-  font-weight: 400; 
+.contacts-select-city {
+  display: block;
+  font-size: 20px; 
+  font-weight: 400;
   letter-spacing: 0.05em;
-  color: #717171; 
+  color: #717171;
   padding: .6em 35px .5em 20px;
   width: 450px;
-  height: 50px; 
+  height: 50px;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-   -moz-appearance: none;
-   -webkit-appearance: none;
-   appearance: none;
-  background-color: #D6E7D2; 
-  background-image: url('../picture/select-arrow.svg'); 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #D6E7D2;
+  background-image: url('../picture/select-arrow.svg');
   background-repeat: no-repeat, repeat;
   background-position: right 36px top 50%, 0 0;
-  background-size: .65em auto, 100%; 
-  } 
-   .contacts-select-city::-ms-expand { display: none; } 
-   .contacts-select-city:hover { border-color: #888; } 
-   .contacts-select-city:focus { 
-    border: 2px solid #E06733; 
-   box-shadow: 0 0 0 3px -moz-mac-focusring; 
-  color: #222;
-   outline: none; 
-  } 
-   .contacts-select-city option { font-weight:normal; } 
-   *[dir="rtl"] .contacts-select-city, :root:lang(ar) .contacts-select-city, :root:lang(iw) .contacts-select-city { 
-  background-position: left .7em top 50%, 0 0; 
-  padding: .6em .8em .5em 1.4em; 
-  }
+  background-size: .65em auto, 100%;
+  cursor: pointer;
+  transition: 0.5s linear;
+} 
+.contacts-select-city::-ms-expand {
+  display: none;
+} 
+.contacts-select-city:hover {
+  background-color: #C1E698;
+} 
+.contacts-select-city:focus {   
+  color: #717171;
+  outline: none; 
+} 
+.contacts-select-city option {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #499A18;
+}
 /* ---------------contacts -------------------*/
 
 /* footer */
@@ -388,14 +414,36 @@ footer pre {
   align-items: center;
   margin-left: 20px;
 }
-.social-network img {
+.social-network svg {
   width: 32px;
   height: 32px;
+}
+path {
+  transition: 0.3s linear;
+}
+.social-network a:hover path {
+  fill: #499A18;
+}
+.social-network a:active path {
+  fill: #000000;
 }
 .school-link, .github-link {
   font-weight: 400;
   font-size: 20px;
   line-height: 50px;
+  transition: 0.3s linear;
+}
+.school-link:hover {
+  color: #499A18;
+}
+.school-link:active {
+  color: #000000;
+}
+.github-link:hover {
+  color: #499A18;
+}
+.github-link:active {
+  color: #000000;
 }
 .school-link {
   margin-left: 40px;
