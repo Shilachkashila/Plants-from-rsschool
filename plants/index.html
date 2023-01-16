@@ -11,6 +11,7 @@
 
    <!-- Custom -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
   <link rel="icon" href="picture/favicon.ico">
 </head>
 <body>
@@ -65,9 +66,12 @@
       </header>
       <div class="content">
         <article>
-          <div class="wrapper-img">
-            <img src="picture/first.png" alt="plant">
-          </div>
+         
+            <picture>
+              <source media="(max-width: 1340px)" alt="plant" srcset="picture/firstM.png">
+              <img src="picture/first.png" alt="plant">
+            </picture>
+       
           <div class="service-information">
             <h3>Garden care</h3>
             <p>Lorem Ipsum has been the industry</p>

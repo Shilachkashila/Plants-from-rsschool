@@ -1,0 +1,21 @@
+
+@media (max-width: 1340px) {
+  article {
+    width: 280px;
+}
+}
+
+@media (max-width: 1220px) {
+  header, footer, .welcome, .about, .service, .prices, .contacts {
+    padding: 0 50px 0;
+  }
+  .welcome .wrapper-img {
+    margin-top: 102px;
+    width: 409px;
+  }
+  .about .wrapper-img {
+    margin-top: 53px;
+    width: 424px;
+  }
+  
+}
