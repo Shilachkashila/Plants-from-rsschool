@@ -76,7 +76,6 @@
     margin-bottom: 40px;
     font-size: 35px;
     line-height: 46px;
-    color: #499A18;
   }
   .about p {
     font-weight: 400;
@@ -182,7 +181,7 @@
   }
 }
 
-/* --------------------------------------768 */
+/* ------------------------------------------------768 */
 @media (max-width: 768px) {
   .welcome .wrapper-img {
     order: 2;
@@ -239,4 +238,224 @@
   .social-network {
     margin: 8px 20px 0 0;
   }
+}
+
+/* ---------------------------------------------------767 */
+@media (max-width: 767px) {
+  /* ------------header-------------- */
+  header {
+    height: 96px;
+  }
+  nav {
+    display: none;
+  }
+  /* ---header end--- */
+
+  /*------------ welcome-------------- */
+  .welcome {
+    height: 300px;
+  }
+  .welcome .wrapper-img {
+   display: none;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .welcome .wrapper-text {
+    margin-top: 26px;
+    width: 100%;
+  }
+  .welcome p {
+    margin-bottom: 24px;
+  }
+  /*---welcome end--- */
+
+  /* -----------about------------------ */
+  .about {
+    height: 516px;
+  }
+  .about .wrapper-text {
+    width: 100%;
+  }
+  .about h2 {
+    margin-bottom: 13px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .about p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .about .wrapper-img {
+    margin-top: 20px;
+    width: 150px;
+  }
+  /* ---about end--- */
+
+  /* -----------service ----------------*/
+  .service {
+    height: 3150px;
+  }
+  .service h2 {
+    margin: 30px 0 35px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .header-menu button {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .service header {
+    height: 253px;
+  }
+  .service .header-menu {
+    width: 100%;
+  }
+  .service .content {
+    width: 282px;
+  }
+  article {
+    margin-bottom: 34px;
+  }
+  /*----about and--- */
+
+  /* ----------------prices-------------- */
+  .prices {
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+  }
+  .prices .wrapper-img {
+    display: none;
+  }
+  .prices h2 {
+    margin-left: 0;
+    margin-bottom: 40px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .price-info {
+    margin-bottom: 14px;
+    width: 180px;
+    font-size: 15px;
+  }
+  .prices-menu {
+    width: 224px;
+    min-height: 235px;
+  }
+  .order-service {
+    margin-top: 19px;
+    align-items: center;
+  }
+  .order-service button {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .prices h3 {
+    text-align: center;
+}
+/*----prices--- */
+
+/* ---------------contacts---------------- */
+.contacts {
+    height: 445px;
+}
+.contacts h2 {
+    margin: 25px 0 0 0;
+    font-size: 25px;
+    line-height: 33px;
+}
+.contacts-select-wrapper {
+    margin-top: 80px;
+}
+.contacts-select-city {
+  width: 300px;
+}
+.contacts .wrapper-img {
+  width: 100px;
+}
+/*---contacts and--- */
+
+/* -----------------footer----------------- */
+  footer {
+    height: 146px;
+  }
+}
+
+/* ---------------------------------------------------480 */
+@media (max-width: 480px) {
+  header, footer, .welcome, .about, .service, .prices, .contacts {
+    padding: 0 25px 0;
+  }
+  h1 {
+    margin-bottom: 21px;
+  }
+  .welcome button {
+    width: 100px;
+    height: 34px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .about .wrapper-img {
+    margin-top: 3px;
+  }
+  .about .wrapper-text {
+    margin-top: 30px;
+  }
+  .header-menu button {
+    margin-right: 10px;
+    margin-bottom: 9px;
+  }
+  .service .header-menu {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .prices {
+    height: 512px;
+  }
+  .wrapper-prices-menu {
+    margin-top: 25px;
+  }
+  .prices h2 {
+    margin-bottom: 38px;
+  }
+  .prices-menu {
+    padding-top: 29px;
+  }
+  .price-info {
+    padding: 16px 40px 16px 30px;
+    margin-bottom: 14px;
+  }
+  .prices h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .contacts-select-city {
+    background-position: right 24px top 50%, 0 0;
+  }
+  .contacts .wrapper-img {
+    margin-left: 0;
+  }
+  .github-link {
+    margin-top: 20px;
+  }
+  .school-link {
+    margin: 16px 0 14px;
+  }
+  .social-network {
+    margin: 0 20px 0 0;
+  }
+}
+/* ---------------------------------------------------380 */
+@media (max-width: 380px) {
+  body {
+  min-width: 380px;
+}
 }

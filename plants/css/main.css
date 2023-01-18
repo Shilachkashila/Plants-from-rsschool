@@ -269,15 +269,16 @@ article p {
 .prices-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  padding-top: 33px;
   align-items: center;
-  min-width: 332px;
-  height: 282px;
+  width: 332px;
+  min-height: 282px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
 }
 .price-info {
   padding: 16px 40px 16px;
+  margin-bottom: 33px;
   width: 250px;
   height: 50px;
   font-weight: 700;
