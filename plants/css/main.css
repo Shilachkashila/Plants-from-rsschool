@@ -45,7 +45,7 @@ body {
   font-family: 'Inter', sans-serif;
  
 }
-.wr {
+.wrapper-site {
   overflow-x: hidden;
 }
 
@@ -112,22 +112,29 @@ nav a:hover {
 .close-menu img {
   width: 100%;
 }
-
 .burger {
   display: none;
-  align-items: center;
+  position: relative;
   width: 40px;
-  height: 24px;
+  height: 27px;
   border-top: 2px solid #717171;
   border-bottom: 2px solid #717171;
   background-color: transparent;
 }
-.burger-line {
-  width: 40px;
-  height: 9px;
-  border-top: 2px solid #717171;
-  border-bottom: 2px solid #717171;
+.burger::before, .burger::after {
+ content: "";
+ position: absolute;
+ width: 40px;
+ height: 2px;
+ background-color: #717171;
 }
+.burger::before {
+  top: 7px;
+}
+.burger::after {
+  bottom: 7px;
+}
+
 
 /* -----------header end----------- */
 
