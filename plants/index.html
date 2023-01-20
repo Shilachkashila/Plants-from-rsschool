@@ -15,17 +15,22 @@
   <link rel="icon" href="picture/favicon.ico">
 </head>
 <body>
+  <div class="wr">
 	<header>
         <a href="index.html"><div class="logo"><img src="picture/logo_vector.svg" alt="plants-home"><p>Plants</p></div></a>
         <nav class="nav_header">
+          <button class="close-menu"><img src="picture/close.svg" alt="close menu"></button>
           <ul>
-            <li><a class="active-nav" href="#welcome">Home</a></li>
+            <li><a class="list-active" href="#welcome">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#service">Service</a></li>
             <li><a href="#prices">Price</a></li>
             <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
+        <button class="burger" aria-label="open menu" aria-expanded="false">
+          <div class="burger-line"></div>
+        </button>
 	</header>
 	<main>
     <section class="welcome" id="welcome">
@@ -191,6 +196,8 @@
       </li>
     </ul>
 	</footer>
+</div>
 
+  <script src="js/open-nav.js"></script>
 </body>
 </html>

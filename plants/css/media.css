@@ -246,8 +246,33 @@
   header {
     height: 96px;
   }
-  nav {
-    display: none;
+  .nav_header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(235px);
+    background: #D6E7D2;
+    box-shadow: -10px 10px 10px rgb(0 0 0 / 25%);
+    transition: 0.5s;
+    z-index: 100;
+  }
+  .nav-visible {
+    transform: translateX(0);
+  }
+  nav li {
+    display: inherit;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #717171;
+  }
+  nav a {
+    color: #717171;
+  }
+  .close-menu {
+    display: block;
+  }
+  .burger {
+    display: flex;
   }
   /* ---header end--- */
 
