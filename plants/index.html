@@ -136,15 +136,26 @@
       <div class="wrapper-prices-menu">
         <h2>Prices</h2>
         <div class="prices-menu">
-          <div class="price-info">
-            <span>Basics</span>
-          </div>
-          <div class="price-info">
-            <span>Standard</span>
-          </div>
-          <div class="price-info">
-            <span>Pro care</span>
-          </div>
+          <details class="price-info">
+            <summary>Basics</summary>
+            <div class="wrapper-details-info">
+              <p class="info">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+              <p class="sum"><span>$15</span> / per hour</p>
+              <button>Order</button>
+            </div>
+          </details>
+          <details class="price-info">
+            <summary>Standard</summary>
+            <p class="info">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+            <p class="sum"><span>$25</span> / per hour</p>
+            <button>Order</button>
+          </details>
+          <details class="price-info">
+            <summary>Pro care</summary>
+            <p class="info">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+            <p class="sum"><span>$35</span> / per hour</p>
+            <button>Order</button>
+          </details>
         </div>
       </div>
       <div class="order-service">
@@ -195,8 +206,8 @@
     </ul>
 	</footer>
 </div>
-
+  <script src="js/accordion.js"></script>
   <script src="js/open-nav.js"></script>
-  <script src="js/index.js"></script>
+  <!-- <script src="js/index.js"></script> -->
 </body>
 </html>
