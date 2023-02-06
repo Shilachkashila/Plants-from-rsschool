@@ -64,13 +64,13 @@
       <header>
         <h2>Service and our <br>projects</h2>
         <div class="header-menu">
-          <button>Gardens</button>
-          <button>Lawn</button>
-          <button>Planting</button>
+          <button id="Gardens">Gardens</button>
+          <button id="Lawn">Lawn</button>
+          <button id="Planting">Planting</button>
         </div>
       </header>
       <div class="content">
-        <article>
+        <article class="gardens">
           <picture>
               <source media="(max-width: 1340px)" srcset="picture/firstM.png">
               <img src="picture/first.png" alt="plant">
@@ -80,7 +80,7 @@
             <p>Lorem Ipsum has been the industry</p>
           </div>
         </article>
-        <article>
+        <article class="planting">
           <picture>
             <source media="(max-width: 1340px)" srcset="picture/first2M.png">
             <img src="picture/first2.png" alt="plant">
@@ -90,7 +90,7 @@
             <p>Lorem Ipsum has been the industry</p>
           </div>
         </article>
-        <article>
+        <article class="lawn">
         <picture>
           <source media="(max-width: 1340px)" srcset="picture/first3M.png">
           <img src="picture/first3.png" alt="plant">
@@ -100,7 +100,7 @@
           <p>Lorem Ipsum has been the industry</p>
         </div>
         </article>
-        <article>
+        <article class="planting">
           <picture>
             <source media="(max-width: 1340px)" srcset="picture/first4M.png">
             <img src="picture/first4.png" alt="plant">
@@ -110,7 +110,7 @@
             <p>Lorem Ipsum has been the industry</p>
           </div>
         </article>
-        <article>
+        <article class="gardens">
           <picture>
             <source media="(max-width: 1340px)" srcset="picture/first5M.png">
             <img src="picture/first5.png" alt="plant">
@@ -141,20 +141,20 @@
             <div class="wrapper-details-info">
               <p class="info">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
               <p class="sum"><span>$15</span> / per hour</p>
-              <button>Order</button>
+              <a href="#contacts">Order</a>
             </div>
           </details>
           <details class="price-info">
             <summary>Standard</summary>
             <p class="info">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
             <p class="sum"><span>$25</span> / per hour</p>
-            <button>Order</button>
+            <a href="#contacts">Order</a>
           </details>
           <details class="price-info">
             <summary>Pro care</summary>
             <p class="info">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
             <p class="sum"><span>$35</span> / per hour</p>
-            <button>Order</button>
+            <a href="#contacts">Order</a>
           </details>
         </div>
       </div>
@@ -206,6 +206,7 @@
     </ul>
 	</footer>
 </div>
+<script src="js/two-activ-btn.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/open-nav.js"></script>
   <!-- <script src="js/index.js"></script> -->
